@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">Portfolio</a>
+        <div class="menuToggle"></div>
+        <ul class="nav">
+            <li class="active"><a href="#home">Home</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        
+    </header>
+    <section id="home">
+        <div class="content">
+            <h2>Ashwin Chaudhary</h2>
+            <p> I am Ashwin Chaudhary , A skilled web developer, crafting digital experiences with innovation and precision. Passionate about clean code, seamless functionality, and creative design.</p>
+            <a href="#" class="btn">Contact Me</a>
+        </div>
+        <img src="images/Ashwin.png" class="men" alt="">
+    </section>
+    <section id="Services">
+
+        <div class="secText" >
+            <h2>What I Am  Great At</h2>
+            <p> I am Great at excels in web development, crafting dynamic and user-friendly websites. Proficient in HTML, CSS, JavaScript, and backend technologies, delivers seamless online experiences with creativity and precision.</p>
+
+
+        </div>
+        <div class="content">
+            <div class="servicesBx">
+                <img src="images/html.png" alt="">
+                <h3>HTML</h3>
+            </div>
+            <div class="servicesBx">
+                <img src="images/css.png" alt="">
+                <h3>CSS</h3>
+            </div>
+            <div class="servicesBx">
+                <img src="images/js.png" alt="">
+                <h3>Java Script</h3>
+            </div>
+            <div class="servicesBx">
+                <img src="images/app-development.png" alt="">
+                <h3>Web Devlopment</h3>
+            </div> <div class="servicesBx">
+                <img src="images/development.png" alt="">
+                <h3>App Development </h3>
+            </div> <div class="servicesBx">
+                <img src="images/java.png" alt="">
+                <h3>JAVA</h3>
+            </div>
+
+        </div>
+        <div class="center">
+            <a href="#" class="btn">Hire Me</a>
+        </div>
+
+
+
+
+    </section>
+    <section id="About">
+        <div class="secText">
+            <h2>My Masterpiece Collection</h2>
+
+            <p>Diverse masterpiece collection: APIs, Amazon & Netflix clones, showcasing versatile skills in web development, replication, and innovation.</p>
+
+
+        </div>
+        <div class="content">
+            <div class="imgBx">
+                <img src="images/img1.png" class="img1">
+                <figcaption>Amazon Clone</figcaption>
+            </div>
+            <div class="imgBx">
+                <img src="images/img2.png" class="img2">
+                <figcaption>Netflix Clone</figcaption>
+            </div>
+            <div class="imgBx">
+                <img src="images/img3.png" class="img3">
+                <figcaption>Temperature Converter</figcaption>
+            </div>
+            
+            <div class="imgBx">
+                <img src="images/img4.png" class="img4">
+                <figcaption>Wheather API</figcaption>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="secText">
+            <h2>Way To Connect Me</h2>
+
+            <p> You can Connect with me using these platform .</p>
+
+
+        </div>
+        <div class="content">
+            <a href="#">    
+                <ion-icon name="mail-unread-outline"></ion-icon>ashwin@gmail.com
+            </a>
+                <a href="#"><ion-icon name="call-outline"></ion-icon>+91 2143658709
+            </a>
+                <a href="#"><ion-icon name="logo-github"></ion-icon>github
+            </a>
+                <a href="#"><ion-icon name="logo-instagram"></ion-icon>Instagram
+            </a>
+
+            
+        </div>
+        <div class="center">
+            <p class="copyright">Copyright @2023 <a href="#">Ashwin chaudhary</a> . All Right Reserved.</p>
+        </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+   
+    <script>
+        
+        let list = document.querySelectorAll('.nav li');
+    
+        function active() {
+            list.forEach((i) =>
+                i.classList.remove('active'));
+            this.classList.add('active');
+        }
+    
+        list.forEach((i) =>
+            i.addEventListener('click', active));
+    
+        let menuToggle = document.querySelector('.menuToggle');
+        let header = document.querySelector('header');
+        menuToggle.onclick = function() {
+            header.classList.toggle('active');
+        }
+    </script>
+    
+    
+
+
+
+
+</body>
+</html>
